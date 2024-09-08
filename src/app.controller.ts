@@ -14,8 +14,5 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get('health')
-  healthCheck() {
-    return 'OK';
-  }
+  // Remove the health check from here as we'll create a separate health controller
 }
